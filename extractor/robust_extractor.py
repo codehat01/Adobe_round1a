@@ -1,11 +1,4 @@
 #!/usr/bin/env python3
-"""
-PDF Outline Extractor - Robust Version
-
-Extracts structured headings from any PDF without relying on predefined text.
-Uses advanced font analysis, text patterns, and contextual filtering.
-"""
-
 import json
 import re
 import fitz  # PyMuPDF
@@ -29,7 +22,7 @@ class PDFOutlineExtractor:
         if hasattr(self, 'doc') and self.doc:
             self.doc.close()
 
-    # ... rest of the extractor methods (no folder/output logic)
+    
 
     def extract_text_blocks(self) -> List[Dict]:
         """Extract text blocks with formatting"""
